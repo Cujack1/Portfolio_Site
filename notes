@@ -1,0 +1,9 @@
+1. style.css for Hero Page - adjust responsiveness for all screen sizes, even
+   the weird ones.
+2. style.css for Hero Page - "Curtis Jackson" is hidden when page resizes to be
+   'shorter'. (A) --> I could make a second "Curtis Jackson" in the negative
+   space that mirrors it's position and is only visible outside of the DIV
+   containing the main "curtis Jackson" (B) --> Or I could make the page
+   responsive to height changes specifically.
+3. contact.css - needs custom attribute colors set in :root. (buttons,
+   background colors, text, etc...)

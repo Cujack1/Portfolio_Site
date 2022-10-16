@@ -1,0 +1,181 @@
+:root {
+    --bodyLight: rgb(240, 236, 230);
+    --bodyDark: rgb(6, 0, 18);
+    --textDark: rgb(65, 57, 71);
+    --text: font-family: 'Azeret Mono';
+    --secondaryText: font-family: monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bodyDark);
+}
+
+
+/* Background */
+
+.backSplash {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    clip-path: polygon(100% 0, 65% 50%, 35% 50%, 0 100%, 0 0);
+    background: var(--bodyLight);
+}
+
+
+/* Big Name */
+
+.name {
+    position: absolute;
+    margin: 20px 30px;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--textDark);
+    font-weight: bold;
+    text-shadow: 5px 5px 10px gray;
+}
+
+
+/* Nav Menu */
+
+.footMenu {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyLight);
+}
+
+.menuItems {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--bodyLight);
+    cursor: pointer;
+}
+
+/* .menuItems::active,
+.menuItems::selection,
+.menuItems::focus,
+.menuItems::hover,
+.menuItems::visited {
+    text-decoration: none;
+    color: var(--bodyLight);
+    background-color: green;
+} */
+
+
+/* Form */
+
+.contactForm {
+    position: absolute;
+    width: 25vw;
+    top: 25%;
+    Left: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    border-radius: 50%;
+}
+
+.formElements {
+    display: block;
+    background: rgba(65, 104, 65, 0.25);
+    margin: 5px 0 0 0;
+}
+
+#inputName::placeholder,
+#inputEmail::placeholder,
+#inputMessage::placeholder {
+    color: #000;
+}
+
+#inputName,
+#inputEmail,
+#inputMessage {
+    padding: 5px;
+    width: 50%;
+}
+
+#inputEmail {
+    width: 62.5%;
+}
+
+#inputMessage {
+    padding: 5px;
+    width: 75%;
+}
+
+#inputName,
+#inputEmail {
+    resize: none;
+}
+
+#submitBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background: var(--bodyLight);
+    font-family: var(--text);
+    font-size: 0.95rem;
+    box-shadow: 0 5px 0 2px darkslategray;
+}
+
+#submitBtn:active {
+    margin-top: 2px;
+    box-shadow: 0 3px 0 2px rgb(33, 57, 57);
+}
+
+/* .test {
+    background: #49b293;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    width: 7rem;
+    height: 7rem;
+    padding: 3rem;
+    resize: both;
+    overflow: auto;
+
+} */
+
+@media screen and (max-width: 1480px) {
+
+    .name {
+        font-size: 2.75rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .name {
+        font-size: 1.6rem;
+        writing-mode: vertical-lr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .footMenu {
+        position: absolute;
+        bottom: 4%;
+        right: 4%;
+        margin: 0;
+        padding: 0;
+        writing-mode: vertical-lr;
+        color: var(--bodyLight);
+    }
+
+    .menuItems {
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+}
