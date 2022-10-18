@@ -7,3 +7,5 @@
    responsive to height changes specifically.
 3. contact.css - needs custom attribute colors set in :root. (buttons,
    background colors, text, etc...)
+4. .backSplash - change all CSS files to --- 'width: auto;'
+5. my_projects.css - get rid of 'Bungee Inline'

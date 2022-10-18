@@ -2,25 +2,31 @@
     --bodyLight: rgb(240, 236, 230);
     --bodyDark: rgb(6, 0, 18);
     --textDark: rgb(65, 57, 71);
-    font-family: 'Azeret Mono';
 }
 
 body {
+    background: var(--bodyDark);
     margin: 0;
     padding: 0;
-    background: var(--bodyDark);
+    font-family: 'Azeret Mono';
 }
 
+/* Background */
+
 .backSplash {
+    clip-path: polygon(100% 0, 65% 50%, 35% 50%, 0 100%, 0 0);
+    background: var(--bodyLight);
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
     border: none;
     overflow: hidden;
-    clip-path: polygon(100% 0, 65% 50%, 35% 50%, 0 100%, 0 0);
-    background: var(--bodyLight);
+    z-index: 2;
 }
+
+
+/* Header (Name) */
 
 .name {
     position: relative;
@@ -31,6 +37,8 @@ body {
     font-weight: bold;
     text-shadow: 0 0 37px black;
 }
+
+/* Navigation */
 
 .footMenu {
     position: absolute;
